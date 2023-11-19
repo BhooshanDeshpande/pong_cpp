@@ -1,0 +1,3 @@
+/home/bhooshan/Desktop/pong/build/CMakeFiles/pong_game.dir
+/home/bhooshan/Desktop/pong/build/CMakeFiles/edit_cache.dir
+/home/bhooshan/Desktop/pong/build/CMakeFiles/rebuild_cache.dir
