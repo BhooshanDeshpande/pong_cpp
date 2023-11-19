@@ -1,6 +1,9 @@
 # pong_cpp
 A simple game of pong written in C++ 
 
+![](https://github.com/BhooshanDeshpande/pong_cpp/blob/main/pong.gif)
+
+
 Prerequisites : SDL library
 ```
 sudo apt-get install libsdl2-dev
