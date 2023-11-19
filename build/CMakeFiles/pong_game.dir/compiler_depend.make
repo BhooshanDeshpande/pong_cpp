@@ -266,206 +266,12 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
   /usr/include/x86_64-linux-gnu/bits/timex.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/c++/11/bits/parse_numbers.h \
-  /usr/include/c++/11/iostream \
-  /usr/include/c++/11/ostream \
-  /usr/include/c++/11/ios \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/postypes.h \
-  /usr/include/c++/11/cwchar \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/string_view \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/string_view.tcc \
-  /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc \
-  /usr/include/c++/11/bits/locale_classes.tcc \
-  /usr/include/c++/11/system_error \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /usr/include/c++/11/stdexcept \
-  /usr/include/c++/11/streambuf \
-  /usr/include/c++/11/bits/streambuf.tcc \
-  /usr/include/c++/11/bits/basic_ios.h \
-  /usr/include/c++/11/bits/locale_facets.h \
-  /usr/include/c++/11/cwctype \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
-  /usr/include/c++/11/bits/streambuf_iterator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
-  /usr/include/c++/11/bits/locale_facets.tcc \
-  /usr/include/c++/11/bits/basic_ios.tcc \
-  /usr/include/c++/11/bits/ostream.tcc \
-  /usr/include/c++/11/istream \
-  /usr/include/c++/11/bits/istream.tcc
+  /usr/include/c++/11/bits/parse_numbers.h
 
-
-/usr/include/c++/11/bits/istream.tcc:
-
-/usr/include/c++/11/istream:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/c++/11/cwctype:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/usr/include/c++/11/streambuf:
-
-/usr/include/c++/11/stdexcept:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
-
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/errno.h:
-
-/usr/include/c++/11/cstdio:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
-/usr/include/c++/11/bits/functional_hash.h:
-
-/usr/include/c++/11/bits/stl_construct.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/c++/11/ext/new_allocator.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/c++/11/bits/locale_classes.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/include/c++/11/ext/atomicity.h:
-
-/usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/locale.h:
-
-/usr/include/c++/11/clocale:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
-
-/usr/include/c++/11/bits/localefwd.h:
-
-/usr/include/c++/11/bits/char_traits.h:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-/usr/include/c++/11/new:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/c++/11/bits/locale_facets.h:
-
-/usr/include/c++/11/bits/exception.h:
-
-/usr/include/c++/11/cwchar:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/c++/11/ios:
-
-/usr/include/c++/11/ostream:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/c++/11/bits/locale_facets.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/time.h:
 
@@ -489,13 +295,7 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/include/SDL2/SDL_audio.h:
 
-/usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h:
-
-/usr/include/c++/11/bits/hash_bytes.h:
 
 /usr/include/c++/11/bits/move.h:
 
@@ -511,13 +311,9 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/c++/11/bits/postypes.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /usr/include/SDL2/SDL_surface.h:
 
@@ -529,8 +325,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h:
 
-/usr/include/c++/11/bits/allocator.h:
-
 /usr/include/c++/11/cmath:
 
 /usr/include/c++/11/math.h:
@@ -539,15 +333,11 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h:
-
-/usr/include/c++/11/iostream:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
@@ -562,8 +352,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/include/SDL2/SDL_blendmode.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/c++/11/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -613,8 +401,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
-
 /usr/include/SDL2/SDL_main.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
@@ -631,8 +417,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
-/usr/include/c++/11/bits/ostream_insert.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
@@ -647,17 +431,11 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/c++/11/cctype:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h:
-
-/usr/include/c++/11/bits/alloc_traits.h:
 
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
-
-/usr/include/c++/11/string_view:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -665,11 +443,7 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/usr/include/c++/11/bits/basic_ios.tcc:
-
 /usr/include/SDL2/SDL_events.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
@@ -709,8 +483,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h:
 
-/usr/include/c++/11/bits/streambuf_iterator.h:
-
 /usr/include/SDL2/SDL_config.h:
 
 /usr/include/SDL2/SDL_version.h:
@@ -727,8 +499,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h:
 
-/usr/include/pthread.h:
-
 /usr/include/SDL2/SDL_hints.h:
 
 /usr/include/SDL2/SDL_gesture.h:
@@ -736,8 +506,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/include/ctype.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h:
-
-/usr/include/c++/11/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
@@ -752,8 +520,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/include/c++/11/debug/assertions.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/string.h:
 
@@ -782,8 +548,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
@@ -817,8 +581,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
-/usr/include/c++/11/bits/range_access.h:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/SDL2/SDL_video.h:
@@ -839,8 +601,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h:
 
-/usr/include/c++/11/bits/stringfwd.h:
-
 /usr/include/SDL2/SDL_rwops.h:
 
 /usr/include/SDL2/SDL_quit.h:
@@ -859,8 +619,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h:
 
-/usr/include/c++/11/string:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h:
@@ -874,8 +632,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -905,8 +661,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h:
 
-/usr/include/c++/11/system_error:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
@@ -918,10 +672,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h:
-
-/usr/include/c++/11/initializer_list:
-
-/usr/include/c++/11/iosfwd:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h:
 
@@ -959,8 +709,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h:
@@ -985,8 +733,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h:
 
-/usr/include/c++/11/exception:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h:
@@ -1008,8 +754,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/include/SDL2/SDL_keyboard.h:
 
 /usr/include/SDL2/SDL_scancode.h:
-
-/usr/include/c++/11/bits/ostream.tcc:
 
 /usr/include/SDL2/SDL_mouse.h:
 
@@ -1046,8 +790,6 @@ CMakeFiles/pong_game.dir/src/pong.cpp.o: ../src/pong.cpp \
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/SDL2/SDL_timer.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/SDL2/SDL_misc.h:
 

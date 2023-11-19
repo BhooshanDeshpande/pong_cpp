@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include<SDL2/SDL_ttf.h> 
 #include<chrono>
+#include<string> 
 
 const int WINDOW_WIDTH = 1280;
 const int WINDOW_HEIGHT = 720;

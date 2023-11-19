@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bhooshan/Desktop/pong/pong_game -isystem /usr/include/SDL2
+CXX_INCLUDES = -I/home/bhooshan/Desktop/pong_cpp/pong_game -isystem /usr/include/SDL2
 
 CXX_FLAGS = -std=c++17
 
