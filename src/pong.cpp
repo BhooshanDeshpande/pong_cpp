@@ -1,202 +1,12 @@
 #include <SDL2/SDL.h>
 #include<SDL2/SDL_ttf.h> 
+#include "utilities.hpp"
+#include "ball.hpp"
+#include "paddle.hpp"
+#include "player_score.hpp"
+#include "constants.hpp"
 #include<chrono>
 #include<string> 
-
-const int WINDOW_WIDTH = 1280;
-const int WINDOW_HEIGHT = 720;
-const int BALL_WIDTH = 15;
-const int BALL_HEIGHT = 15;
-const int BALL_SPEED = 1.0f; 
-const int PADDLE_WIDTH = 15;
-const int PADDLE_HEIGHT = 100;
-const float PADDLE_SPEED = 1.0f;
-const int GOAL_SPACE=100; 
-
-enum Buttons
-{ 
-	PadOneUp = 0,
-	PadOneDown, 
-	PadTwoUp,
-	PadTwoDown,
-};
-enum class CollisionType
-{
-	None,
-	Top,
-	Middle,
-	Bottom,
-	Left,
-	Right,
-};
-struct Contact
-{
-	CollisionType type;
-	float penetration;
-};
-
-class Vec2
-{
-	public:
-		Vec2() : x(0.0f), y(0.0f) {}
-
-		Vec2(float x, float y) : x(x), y(y) {}
-
-		Vec2 operator+(Vec2 const& rhs) 
-		{
-			return Vec2(x + rhs.x, y + rhs.y);
-		}
-
-		Vec2& operator+=(Vec2 const& rhs)
-		{
-			x += rhs.x;
-			y += rhs.y;
-			return *this;
-		}
-
-		Vec2 operator*(float rhs)
-		{
-			return Vec2(x * rhs, y * rhs);
-		}
-
-		float x, y;
-};
-class Ball
-{ 
-	public: 
-		Ball(Vec2 position, Vec2 velocity) : position(position), velocity(velocity)
-		{ 
-			rect.x = static_cast<int>(position.x); 
-			rect.y = static_cast<int>(position.y); 
-			rect.w = BALL_WIDTH; 
-			rect.h = BALL_HEIGHT; 
-		}
-		void Draw(SDL_Renderer* renderer){ 
-			rect.x = static_cast<int>(position.x);
-			rect.y = static_cast<int>(position.y);
-			SDL_RenderFillRect(renderer, &rect);
-		}
-		void Update(float dt)
-		{ 
-			position += velocity*dt; 
-		}
-		void CollideWithPaddle(Contact const& contact)
-		{
-			position.x += contact.penetration;
-			velocity.x = -velocity.x;
-
-			if (contact.type == CollisionType::Top)
-			{
-				velocity.y = -.75f * BALL_SPEED;
-			}
-			else if (contact.type == CollisionType::Bottom)
-			{
-				velocity.y = 0.75f * BALL_SPEED;
-			}
-		}
-		void CollideWithWall(Contact const& contact)
-			{
-				if ((contact.type == CollisionType::Top)
-					|| (contact.type == CollisionType::Bottom))
-				{
-					position.y += contact.penetration;
-					velocity.y = -velocity.y;
-				}
-				else if (contact.type == CollisionType::Left)
-				{
-					position.x = WINDOW_WIDTH / 2.0f;
-					position.y = WINDOW_HEIGHT / 2.0f;
-					velocity.x = BALL_SPEED;
-					velocity.y = 0.75f * BALL_SPEED;
-				}
-				else if (contact.type == CollisionType::Right)
-				{
-					position.x = WINDOW_WIDTH / 2.0f;
-					position.y = WINDOW_HEIGHT / 2.0f;
-					velocity.x = -BALL_SPEED;
-					velocity.y = 0.75f * BALL_SPEED;
-				}
-			}
-		
-		Vec2 position; 
-		Vec2 velocity; 
-		SDL_Rect rect = {}; 
-};
-class Paddle
-{ 
-	public: 
-		Paddle(Vec2 position, Vec2 velocity) : position(position), velocity(velocity)
-		{ 
-			rect.x = static_cast<int>(position.x); 
-			rect.y = static_cast<int>(position.y); 
-			rect.w = PADDLE_WIDTH; 
-			rect.h = PADDLE_HEIGHT; 
-		}
-
-		void Draw(SDL_Renderer* renderer)
-		{ 
-			rect.y = static_cast<int>(position.y);
-			SDL_RenderFillRect(renderer, &rect);
-		}
-
-		void update(float dt)
-		{ 
-			position += velocity * dt;
-			if (position.y < 0) position.y = 0; 
-			else if (position.y > (WINDOW_HEIGHT - PADDLE_HEIGHT)) position.y = WINDOW_HEIGHT - PADDLE_HEIGHT;
-		}
-		Vec2 position; 
-		Vec2 velocity; 
-		SDL_Rect rect = {}; 
-};
-class PlayerScore
-{ 
-	public:
-		PlayerScore(Vec2 position, SDL_Renderer* renderer, TTF_Font* font)
-			: renderer(renderer), font(font) 
-		{
-			surface = TTF_RenderText_Solid(font, "0", {0xFF, 0xFF, 0xFF, 0xFF});
-			texture = SDL_CreateTextureFromSurface(renderer, surface); 
-
-			int w, h; 
-			SDL_QueryTexture(texture, nullptr, nullptr, &w, &h);
-			rect.x = static_cast<int>(position.x); 
-			rect.y = static_cast<int>(position.y); 
-			rect.w = w; 
-			rect.h = h; 
-		}
-
-		~PlayerScore()
-		{ 
-			SDL_FreeSurface(surface); 
-			SDL_DestroyTexture(texture); 
-		}
-
-		void Draw()
-		{ 
-			SDL_RenderCopy(renderer, texture, nullptr, &rect); 
-		}
-
-		void SetScore(int score)
-		{
-			SDL_FreeSurface(surface);
-			SDL_DestroyTexture(texture);
-
-			surface = TTF_RenderText_Solid(font, std::to_string(score).c_str(), {0xFF, 0xFF, 0xFF, 0xFF});
-			texture = SDL_CreateTextureFromSurface(renderer, surface);
-
-			int width, height;
-			SDL_QueryTexture(texture, nullptr, nullptr, &width, &height);
-			rect.w = width;
-			rect.h = height;
-		}
-		
-		SDL_Renderer* renderer; 
-		TTF_Font* font;
-		SDL_Surface* surface = {}; 
-		SDL_Texture* texture = {}; 
-		SDL_Rect rect = {}; 
-}; 
 
 Contact CheckPaddleCollision(Ball const& ball, Paddle const& paddle)
 {
@@ -259,6 +69,7 @@ Contact CheckPaddleCollision(Ball const& ball, Paddle const& paddle)
 	}
 	return contact;
 }
+
 Contact CheckWallCollision(Ball const& ball)
 {
 	float ballLeft = ball.position.x;
@@ -289,6 +100,7 @@ Contact CheckWallCollision(Ball const& ball)
 
 	return contact;
 }
+
 int main()
 {
 	// Initialize SDL components
@@ -389,8 +201,8 @@ int main()
 				}
 			}
 
-			pad1.update(dt);
-			pad2.update(dt);
+			pad1.Update(dt);
+			pad2.Update(dt);
 			ball.Update(dt);
 
 			// Clear the window to black

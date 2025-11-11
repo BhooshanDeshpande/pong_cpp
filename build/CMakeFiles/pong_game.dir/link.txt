@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/pong_game.dir/src/pong.cpp.o -o pong_game  /usr/lib/x86_64-linux-gnu/libSDL2.so -lSDL2_ttf 
